@@ -20,7 +20,7 @@ Desenvolver habilidades práticas em SQL aplicadas ao contexto de análise de da
 
 ## 🛠️ Estrutura do Projeto
 
-📁 projeto-ecommerce-apple-sql
+📁 ecommerce-Data-Analytics
 ├── 1_criacao_tabelas.sql
 ├── 2_insercao_dados.sql
 ├── 3_analises.sql
