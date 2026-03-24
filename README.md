@@ -1,4 +1,4 @@
-# 📊 Projeto de Análise de Dados com SQL — E-commerce Apple Brasil
+# 📊 Projeto de Análise de Dados com SQL — E-commerce 
 
 ## 📌 Descrição do Projeto
 Este projeto simula um ambiente de e-commerce de produtos Apple no Brasil, com foco em análise de dados para geração de insights de negócio.  
