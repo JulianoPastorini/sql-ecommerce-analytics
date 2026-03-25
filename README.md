@@ -1,128 +1,163 @@
-# 📊 Projeto de Análise de Dados com SQL — E-commerce 
+📊 Projeto SQL Completo — Análise de E-commerce Apple Brasil
+🧠 Objetivo do Projeto
 
-## 📌 Descrição do Projeto
-Este projeto simula um ambiente de e-commerce de produtos Apple no Brasil, com foco em análise de dados para geração de insights de negócio.  
+O objetivo deste projeto é simular um ambiente real de e-commerce e aplicar, de forma prática, conceitos fundamentais e avançados de SQL para análise de dados.
 
-A proposta é aplicar conceitos fundamentais de SQL — desde modelagem até consultas analíticas — para entender métricas como faturamento, lucro, margem e comportamento de clientes.
+Ao longo do projeto, são abordadas etapas essenciais de um fluxo de dados:
 
----
+Criação da estrutura do banco de dados
+Inserção de dados simulados
+Integração entre tabelas
+Análise de métricas de negócio
+Criação de views para facilitar consultas
+🧱 Etapa 1: Criação da Estrutura do Banco de Dados
 
-## 🧠 Objetivo
-Desenvolver habilidades práticas em SQL aplicadas ao contexto de análise de dados, incluindo:
+Nesta etapa, foi realizada a modelagem do banco de dados relacional.
 
-- Modelagem de banco relacional  
-- Manipulação de dados  
-- Integração entre tabelas (JOINs)  
-- Agregações e métricas de negócio  
-- Criação de VIEW para análise estruturada  
+🎯 Objetivo
 
----
+Organizar os dados de forma estruturada, garantindo integridade e relacionamento entre as tabelas.
 
-## 🛠️ Estrutura do Projeto
+📊 Tabelas criadas
+clientes → Armazena informações dos clientes
+produtos → Contém dados dos produtos (preço e custo)
+pedidos → Registra as compras realizadas
+marketing → Registra investimentos em campanhas
+custos_operacionais → Armazena despesas do negócio
+🔧 Conceitos aplicados
+CREATE TABLE
+PRIMARY KEY (identificação única)
+FOREIGN KEY (relacionamento entre tabelas)
+Tipagem de dados (INT, VARCHAR, DECIMAL, DATE)
+💡 Importância
 
-📁 ecommerce-Data-Analytics
-├── 1_criacao_tabelas.sql
-├── 2_insercao_dados.sql
-├── 3_analises.sql
-└── 4_views.sql
+Essa etapa é fundamental para garantir:
 
-## 📂 Descrição dos Arquivos
+Integridade dos dados
+Relacionamentos corretos
+Base sólida para análises futuras
+📥 Etapa 2: Inserção de Dados
 
-🧱 1_criacao_tabelas.sql
+Nesta etapa, foram inseridos dados simulados nas tabelas.
 
-Responsável pela criação da estrutura do banco de dados.
+🎯 Objetivo
 
-#### 📌 Principais comandos utilizados:
-- `CREATE DATABASE`
-- `USE`
-- `CREATE TABLE`
-- `PRIMARY KEY`
-- `FOREIGN KEY`
+Criar um cenário realista de operação de e-commerce para permitir análises.
 
-#### 📊 Tabelas criadas:
-- `clientes` → informações dos clientes  
-- `produtos` → dados dos produtos (preço e custo)  
-- `pedidos` → registros de compras  
-- `marketing` → investimentos em campanhas  
-- `custos_operacionais` → despesas da operação  
+🔧 Conceitos aplicados
+INSERT INTO
+Inserção de múltiplos registros
+📊 Dados simulados
+Clientes com diferentes perfis
+Produtos com diferentes preços e custos
+Pedidos com quantidades variadas
+Investimentos em marketing
+Custos operacionais mensais
+💡 Importância
 
----
+Sem dados, não existe análise.
+Essa etapa permite simular um ambiente real de negócio.
 
-### 📥 2_insercao_dados.sql
+🔗 Etapa 3: Integração de Dados com JOIN
 
-Responsável pela inserção de dados simulados no banco.
+Nesta fase, os dados das diferentes tabelas foram combinados.
 
-#### 📌 Principais comandos utilizados:
-- `INSERT INTO`
+🎯 Objetivo
 
-#### 📊 Objetivo:
-Criar um cenário realista para análise, simulando:
-- compras de clientes  
-- vendas de produtos  
-- investimentos em marketing  
-- custos operacionais  
+Relacionar informações de clientes, pedidos e produtos para gerar análises completas.
 
----
+🔧 Conceitos aplicados
+INNER JOIN → para dados que possuem correspondência
+LEFT JOIN → para identificar ausência de dados (ex: clientes sem pedidos)
+💡 Exemplo prático
 
-### 📊 3_analises.sql
+Relacionar:
 
-Contém todas as queries analíticas do projeto.
+Quem comprou
+O que comprou
+Quanto pagou
+💡 Importância
 
-#### 📌 Principais comandos utilizados:
-- `SELECT`
-- `SUM()`
-- `AVG()`
-- `GROUP BY`
-- `ORDER BY`
-- `LEFT JOIN`
-- `WHERE`
-- Subqueries
+JOINs são essenciais porque:
 
-#### 📈 Principais análises realizadas:
-- Faturamento total  
-- Lucro total  
-- Ticket médio  
-- Produtos mais lucrativos  
-- Produtos mais vendidos  
-- Top clientes (LTV simples)  
-- Clientes inativos  
-- ROI de marketing  
-- Margem de lucro (%)  
+Dados reais estão distribuídos em várias tabelas
+Permitem análises completas e contextualizadas
+📊 Etapa 4: Análises de Negócio
 
----
+Nesta etapa, foram criadas queries analíticas para extrair insights.
 
-### 🧩 4_views.sql
+🎯 Objetivo
 
-Criação de uma VIEW para centralizar e facilitar as análises.
+Transformar dados brutos em informações úteis para tomada de decisão.
 
-#### 📌 Principais comandos utilizados:
-- `CREATE VIEW`
-- `JOIN`
-- Cálculos com colunas
+🔧 Conceitos aplicados
+SELECT
+SUM() → total de faturamento/lucro
+AVG() → ticket médio
+GROUP BY → agrupamento
+ORDER BY → ordenação
+WHERE → filtros
+📈 Principais análises realizadas
+Faturamento total → soma de todas as vendas
+Lucro total → faturamento - custos
+Ticket médio → média por pedido
+Produtos mais lucrativos
+Top clientes (LTV básico)
+Clientes inativos
+ROI de marketing
+Margem de lucro (%)
+💡 Importância
 
-#### 📊 Objetivo:
-Criar uma camada analítica consolidada (`vw_analise_ecommerce`) contendo:
+Essa etapa conecta SQL com negócio:
 
-- Cliente  
-- Produto  
-- Quantidade  
-- Faturamento  
-- Custo  
-- Lucro  
+👉 Não é só consulta — é análise estratégica.
 
-Isso permite simplificar consultas e melhorar a organização do código.
+🧩 Etapa 5: Criação de VIEW
 
----
+Nesta etapa, foi criada uma view consolidando os dados principais.
 
-## 📈 Principais Insights
+🎯 Objetivo
 
-- Produtos com maior faturamento nem sempre geram maior lucro  
-- Custos operacionais impactam diretamente a lucratividade  
-- Clientes recorrentes possuem maior valor ao longo do tempo  
-- Investimentos em marketing precisam ser analisados via ROI  
+Facilitar consultas e organizar a camada analítica.
 
----
+🔧 Conceitos aplicados
+CREATE VIEW
+JOINs dentro da view
+Cálculo de métricas (faturamento, custo, lucro)
+📊 Estrutura da VIEW
 
-## 💼 Tecnologias Utilizadas
+A view reúne:
 
-- SQL (MySQL)
+Cliente
+Produto
+Quantidade
+Faturamento
+Custo
+Lucro
+💡 Importância
+
+Views permitem:
+
+Simplificar consultas complexas
+Reutilizar lógica
+Criar uma camada de análise organizada
+Melhorar legibilidade do código
+📈 Resultado Final
+
+Ao final do projeto, foi possível:
+
+Criar um banco de dados completo
+Simular um ambiente real de e-commerce
+Aplicar SQL de forma prática
+Gerar insights de negócio
+Estruturar análises reutilizáveis com VIEW
+🚀 Conclusão
+
+Este projeto demonstra, na prática, como SQL pode ser utilizado não apenas para manipulação de dados, mas como uma ferramenta essencial para análise de negócios.
+
+Além disso, reforça conceitos fundamentais para quem deseja atuar como Analista de Dados:
+
+Modelagem de dados
+Integração de tabelas
+Análise de métricas
+Organização de consultas
