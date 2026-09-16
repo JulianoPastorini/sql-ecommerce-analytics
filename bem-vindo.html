@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bem Vindo</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/datalayer.js"></script>
+    <script src="js/services/trafficService.js"></script>
+    <script src="js/controllers/trafficController.js"></script>
+    <script
+      src="https://assets.adobedtm.com/25faba9991ad/f3daccd6a526/launch-7e881a629ad6-development.min.js"
+      async
+    ></script>
+  </head>
+  <body
+    data-page-name="bem-vindo:controle-trafego"
+    data-page-type="traffic-control"
+  >
+    <main class="welcome-page">
+      <section class="welcome-box" aria-labelledby="welcome-title">
+        <h1 id="welcome-title">Bem Vindo</h1>
+        <p>Você veio de alguma campanha?</p>
+        <div class="welcome-actions">
+          <button
+            type="button"
+            class="btn"
+            data-traffic-choice="campaign"
+            data-analytics-click="origem-campanha-sim"
+          >
+            Sim
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-traffic-choice="organic"
+            data-analytics-click="origem-campanha-nao"
+          >
+            Não
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

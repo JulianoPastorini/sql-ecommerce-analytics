@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mochila de Entrega - Produto</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/datalayer.js"></script>
+    <script src="js/controllers/globalNavigationController.js"></script>
+    <script
+      src="https://assets.adobedtm.com/25faba9991ad/f3daccd6a526/launch-7e881a629ad6-development.min.js"
+      async
+    ></script>
+  </head>
+  <body
+    data-page-name="ecommerce:produto:detalhe"
+    data-page-type="productDetail"
+  >
+    <header class="store-header">
+      <a class="store-logo" href="home.html" data-analytics-click="logo-home"
+        >Bugiganga Shop</a
+      >
+      <div class="user-summary">
+        <strong>Produto</strong><span>Detalhes do item</span
+        ><small data-menu-user-id></small>
+      </div>
+      <nav class="store-nav" aria-label="Navegação principal">
+        <a href="home.html" data-analytics-click="produtos-recomendados"
+          >Produtos Recomendados</a
+        >
+        <a href="catalogo.html" data-analytics-click="todos-itens"
+          >Todos os itens</a
+        >
+        <a href="carrinho.html" data-analytics-click="carrinho">Carrinho</a>
+        <a href="login.html" data-analytics-click="perfil">Perfil</a>
+      </nav>
+    </header>
+    <main>
+      <div class="detalhe-produto">
+        <h2
+          data-product-id="123"
+          data-product-name="Mochila de Entrega Profissional"
+          data-product-price="150.00"
+        >
+          Mochila de Entrega Profissional
+        </h2>
+        <p>Mochila reforçada ideal para o dia a dia.</p>
+        <p class="preco">R$ 150,00</p>
+        <button
+          class="btn"
+          data-add-to-cart
+          data-analytics-click="adicionar-carrinho"
+          data-product-id="123"
+          data-product-name="Mochila de Entrega Profissional"
+          data-product-price="150.00"
+        >
+          Adicionar ao Carrinho
+        </button>
+      </div>
+    </main>
+    <script src="js/services/cartService.js"></script>
+    <script src="js/controllers/appController.js"></script>
+  </body>
+</html>

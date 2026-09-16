@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho - Bugiganga Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/datalayer.js"></script>
+    <script src="js/controllers/globalNavigationController.js"></script>
+    <script
+      src="https://assets.adobedtm.com/25faba9991ad/f3daccd6a526/launch-7e881a629ad6-development.min.js"
+      async
+    ></script>
+  </head>
+  <body data-page-name="checkout:carrinho" data-page-type="cart">
+    <header class="store-header">
+      <a class="store-logo" href="home.html" data-analytics-click="logo-home"
+        >Bugiganga Shop</a
+      >
+      <div class="user-summary">
+        <strong id="cart-user-name"></strong>
+        <span>Seu carrinho</span>
+        <small data-menu-user-id></small>
+      </div>
+      <nav class="store-nav" aria-label="Navegação principal">
+        <a href="home.html" data-analytics-click="produtos-recomendados"
+          >Produtos Recomendados</a
+        >
+        <a href="catalogo.html" data-analytics-click="todos-itens"
+          >Todos os itens</a
+        >
+        <a href="carrinho.html" data-analytics-click="carrinho">Carrinho</a>
+        <a href="login.html" data-analytics-click="perfil">Perfil</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Seu Carrinho</h2>
+      <div id="itens-carrinho" class="produto-card"></div>
+      <div class="detalhe-produto" style="margin-top: 20px">
+        <h3>Resumo do Pedido</h3>
+        <p>Total: R$ <span id="valor-total">0.00</span></p>
+        <button
+          id="btn-finalizar"
+          class="btn"
+          data-analytics-click="finalizar-compra"
+          style="background-color: #28a745"
+        >
+          Finalizar Compra via PIX
+        </button>
+        <button
+          id="btn-limpar-carrinho"
+          class="btn btn-danger"
+          type="button"
+          data-analytics-click="limpar-carrinho"
+          Limpar carrinho
+        </button>
+      </div>
+    </main>
+    <script src="js/services/cartService.js"></script>
+    <script src="js/controllers/appController.js"></script>
+  </body>
+</html>

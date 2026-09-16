@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compra Concluída - Bugiganga Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/datalayer.js"></script>
+    <script src="js/controllers/globalNavigationController.js"></script>
+    <script
+      src="https://assets.adobedtm.com/25faba9991ad/f3daccd6a526/launch-7e881a629ad6-development.min.js"
+      async
+    ></script>
+  </head>
+  <body data-page-name="checkout:confirmacao" data-page-type="purchase">
+    <header class="store-header">
+      <a class="store-logo" href="home.html" data-analytics-click="logo-home"
+        >Bugiganga Shop</a
+      >
+      <div class="user-summary">
+        <strong>Compra concluída</strong
+        ><span>Obrigado por comprar conosco</span
+        ><small data-menu-user-id></small>
+      </div>
+      <nav class="store-nav" aria-label="Navegação principal">
+        <a href="home.html" data-analytics-click="produtos-recomendados"
+          >Produtos Recomendados</a
+        >
+        <a href="catalogo.html" data-analytics-click="todos-itens"
+          >Todos os itens</a
+        >
+        <a href="carrinho.html" data-analytics-click="carrinho">Carrinho</a>
+        <a href="login.html" data-analytics-click="perfil">Perfil</a>
+      </nav>
+    </header>
+    <main>
+      <div
+        class="detalhe-produto"
+        style="text-align: center; border-left: 5px solid #28a745"
+      >
+        <h2>Compra Realizada com Sucesso!</h2>
+        <p>Obrigado pelo seu pedido.</p>
+        <p>Número do Pedido: <strong id="numero-pedido"></strong></p>
+        <a
+          href="home.html"
+          class="btn"
+          data-analytics-click="voltar-home"
+          style="margin-top: 20px"
+          >Voltar para a Home</a
+        >
+      </div>
+    </main>
+    <script src="js/services/cartService.js"></script>
+    <script src="js/controllers/appController.js"></script>
+  </body>
+</html>

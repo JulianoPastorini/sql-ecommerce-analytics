@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Bugiganga Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/datalayer.js"></script>
+    <script src="js/controllers/globalNavigationController.js"></script>
+    <script src="js/services/preferencesService.js"></script>
+    <script src="js/services/productService.js"></script>
+    <script src="js/services/cartService.js"></script>
+    <script src="js/controllers/homeController.js"></script>
+    <script src="js/controllers/searchController.js"></script>
+    <script src="js/controllers/floatingCartController.js"></script>
+    <script
+      src="https://assets.adobedtm.com/25faba9991ad/f3daccd6a526/launch-7e881a629ad6-development.min.js"
+      async
+    ></script>
+  </head>
+  <body data-page-name="home:vitrine" data-page-type="home">
+    <header class="store-header">
+      <a class="store-logo" href="home.html" data-analytics-click="logo-home"
+        >Bugiganga Shop</a
+      >
+      <div class="user-summary">
+        <strong id="home-user-name"></strong>
+        <span id="home-user-categories"></span>
+        <small data-menu-user-id></small>
+      </div>
+      <nav class="store-nav" aria-label="Navegação principal">
+        <a href="home.html" data-analytics-click="produtos-recomendados"
+          >Produtos Recomendados</a
+        >
+        <a href="catalogo.html" data-analytics-click="todos-itens"
+          >Todos os itens</a
+        >
+        <a href="carrinho.html" data-analytics-click="carrinho">Carrinho</a>
+        <a href="login.html" data-analytics-click="perfil">Perfil</a>
+      </nav>
+    </header>
+    <main class="home-content">
+      <section class="home-heading">
+        <p class="eyebrow">Para você</p>
+        <h1>Produtos recomendados</h1>
+        <p>Uma seleção de itens para deixar seu dia mais interessante.</p>
+        <div class="search-box">
+          <label for="product-search">Buscar produtos</label>
+          <input
+            id="product-search"
+            type="search"
+            data-search-input
+            placeholder="Digite o nome de um item"
+            autocomplete="off"
+          />
+          <ul class="search-suggestions" data-search-suggestions hidden></ul>
+        </div>
+      </section>
+      <section
+        id="product-grid"
+        class="product-grid"
+        aria-label="Produtos recomendados"
+      ></section>
+    </main>
+  </body>
+</html>

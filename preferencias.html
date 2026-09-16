@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preferências - Bugiganga Shop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/datalayer.js"></script>
+    <script src="js/controllers/globalNavigationController.js"></script>
+    <script src="js/services/cartService.js"></script>
+    <script src="js/services/preferencesService.js"></script>
+    <script src="js/controllers/preferencesController.js"></script>
+    <script
+      src="https://assets.adobedtm.com/25faba9991ad/f3daccd6a526/launch-7e881a629ad6-development.min.js"
+      async
+    ></script>
+  </head>
+  <body data-page-name="ecommerce:preferencias" data-page-type="preferences">
+    <header>
+      <h1>Bugiganga Shop</h1>
+    </header>
+    <main class="preference-page">
+      <section class="preference-box" aria-labelledby="preferences-title">
+        <h2 id="preferences-title">Olá, <span id="user-name"></span>!</h2>
+        <p>Escolha suas principais categorias:</p>
+        <form id="preferences-form">
+          <div class="category-options">
+            <label
+              ><input type="checkbox" name="category" value="eletronicos" />
+              Eletrônicos</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="casa" /> Casa e
+              decoração</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="moda" /> Moda e
+              acessórios</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="esportes" />
+              Esportes</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="beleza" /> Beleza e
+              cuidados</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="livros" /> Livros e
+              papelaria</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="ferramentas" />
+              Ferramentas</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="brinquedos" />
+              Brinquedos</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="pet" /> Produtos
+              para pets</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="automotivo" />
+              Automotivo</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="instrumentos" />
+              Instrumentos musicais</label
+            >
+            <label
+              ><input type="checkbox" name="category" value="viagem" /> Viagem e
+              lazer</label
+            >
+          </div>
+          <p id="category-feedback" class="form-feedback" aria-live="polite">
+            Selecione 3 categorias.
+          </p>
+          <div class="preference-actions">
+            <button type="submit" class="btn" disabled>Continuar</button>
+            <button
+              type="button"
+              id="skip-preferences"
+              class="btn btn-secondary"
+            >
+              Pular
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
